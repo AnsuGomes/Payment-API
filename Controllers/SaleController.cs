@@ -10,16 +10,13 @@ using Payment_API.Validations;
 
 namespace Payment_API.Controllers
 {
-    public class SaleController
-    {
     [ApiController]
     [Route("api-payment/[controller]")]
-    
-    public class SaleControler : ControllerBase
+    public class SaleController : ControllerBase
     {
         private readonly ContextOrganizer _context;
 
-        public SaleControler(ContextOrganizer context)
+        public SaleController(ContextOrganizer context)
         {
             _context = context;
         }
@@ -107,6 +104,5 @@ namespace Payment_API.Controllers
 
             return Ok(orderSaleDatabase);
         }
-    }
     }
 }
