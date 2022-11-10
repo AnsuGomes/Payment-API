@@ -7,7 +7,7 @@ using Payment_API.Models;
 
 namespace Payment_API.Context
 {
-    public class ContextOrganizer
+    public class ContextOrganizer : DbContext
     {
         public ContextOrganizer(DbContextOptions<ContextOrganizer> options) : base (options)
         {
